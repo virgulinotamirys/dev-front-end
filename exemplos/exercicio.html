@@ -9,14 +9,11 @@
 
 <body>
     <header>
-        <h1>Esboço html</h1>
-        <hr>
         <h1>Unitins</h1>
         <nav>
             <ul>
                 <li>Institucional</li>
                 <li>Graduação</li>
-                <li>Pós-Graduação</li>
                 <li>Pós-Graduação</li>
                 <li>Pesquisa</li>
                 <li>Extensão</li>
@@ -87,30 +84,50 @@
     </aside>
     <section>
         <figure>
-            <img src="../logo-unitins.jpeg" alt="">
+            <img src="../imagens/casi.png" alt="casi" width="100px">
         </figure>
         <figure>
             <img src="https://www.unitins.br/uniPerfil/Logomarca/Imagem/09997c779523a61bd01bb69b0a789242"
-                alt="logo-unitins">
+                alt="logo-unitins" width="100px">
             <figcaption>Logo Unitins</figcaption>
         </figure>
     </section>
     <section>
-        <h1>Formulário de contato</h1>
-        <form action="">
+        <form action="cadastro.html" method="get" target="_blank">
             <div>
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" />
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" />
             </div>
             <div>
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" />
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" name="sobrenome">
             </div>
             <div>
-                <label for="msg">Mensagem:</label>
-                <textarea id="msg"></textarea>
+                <label for="sexo">Sexo</label>
+                <input type="radio" value="Masculino" name="sexo">
+                <input type="radio" value="Feminino" name="sexo">
             </div>
-            <button type="submit">Enviar</button>
+            <div>
+                <label for="login">Login</label>
+                <input type="text" name="login">
+            </div>
+            <div>
+                <label for="senha">Senha</label>
+                <input type="password" name="senha">
+            </div>
+            <fieldset>
+                <legend>Escolha seus interesses</legend>
+                <div>
+                    <input type="checkbox" id="filmes" name="filmes" checked />
+                    <label for="filmes">Filmes</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="videos" name="videos" />
+                    <label for="videos">Vídeos</label>
+                </div>
+            </fieldset>
+            <input type="submit" value="Cadastrar">
         </form>
     </section>
     <footer>
