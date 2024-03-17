@@ -95,26 +95,40 @@
     <hr>
     <br>
     <section>
-        <form action="cadastro.html" method="get" target="_blank">
+        <form action="../formulario/cadastro.html" method="post" target="_blank">
             <div>
                 <label for="nome">Nome</label>
                 <input type="text" name="nome" />
             </div>
             <div>
-                <label for="sobrenome">Sobrenome</label>
-                <input type="text" name="sobrenome">
+                <label for="email">E-mail</label>
+                <input type="email" name="email">
             </div>
             <div>
-                <label for="sexo">Sexo</label>
-                <input type="radio" value="Masculino" name="sexo">
-                <input type="radio" value="Feminino" name="sexo">
+                <label for="disciplina">Disciplina</label>
+                <input type="radio" value="Desenvolvimento Front end" name="disciplina">
+                <input type="radio" value="Programação I" name="disciplina">
             </div>
             <div>
                 <select name="select" id="">
-                    <option value="valor1">Valor 1</option>
-                    <option value="valor2">Valor 2</option>
+                    <option value="nota">Escolha a avaliação</option>
+                    <option value="nota_a1">Nota A1</option>
+                    <option value="nota_a2">Nota A2</option>
                 </select>
             </div>
+            <fieldset>
+                <legend>Escolha seus interesses</legend>
+                <div>
+                    <input type="checkbox" id="frontend" name="frontend" checked />
+                    <label for="frontend">Front end</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="backend" name="backend" />
+                    <label for="backend">Back end</label>
+                </div>
+            </fieldset>
+            <hr>
             <div>
                 <label for="login">Login</label>
                 <input type="text" name="login">
@@ -123,18 +137,7 @@
                 <label for="senha">Senha</label>
                 <input type="password" name="senha">
             </div>
-            <fieldset>
-                <legend>Escolha seus interesses</legend>
-                <div>
-                    <input type="checkbox" id="filmes" name="filmes" checked />
-                    <label for="filmes">Filmes</label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="videos" name="videos" />
-                    <label for="videos">Vídeos</label>
-                </div>
-            </fieldset>
+            <hr>
             <input type="submit" value="Cadastrar">
             <input type="reset" value="Limpar">
         </form>
