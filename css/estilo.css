@@ -1,0 +1,144 @@
+body {
+    background-color: #fff;
+}
+
+/* heading */
+
+h1 {
+    color: blue;
+}
+
+/* paragraph */
+
+p {
+    font-size: 12px;
+}
+
+/* list and item list */
+
+ul li {
+    list-style-type: square;
+}
+
+/* nav */
+
+.nav-item {
+    width: 100%;
+}
+
+.nav-item ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-item ul li a:link {
+    color: #FF5733;
+}
+
+.nav-item ul li a:hover {
+    text-decoration: none;
+}
+
+.nav-item ul li#item-service {
+    color: #f5f5;
+    border: 1px solid;
+    padding: .5em;
+    list-style-type: none;
+}
+
+/* banner */
+main img:hover {
+    opacity: 0.5;
+}
+
+/* galeria */
+img {
+    width: 100%;
+    height: auto;
+}
+
+figure {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 220px;
+    margin: 0;
+}
+
+figcaption {
+    background-color: #ccc;
+    color: blue;
+    padding: 3px;
+    text-align: center;
+}
+
+/* table */
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(140 140 140);
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+caption {
+    caption-side: top;
+    padding: 10px;
+    font-weight: bold;
+}
+
+th,
+td {
+    border: 1px solid rgb(160 160 160);
+    padding: 8px 10px;
+}
+
+
+
+
+
+/* form */
+
+h1+p {
+    color: #000;
+    font-size: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    margin: 0 0 1em 0;
+    padding: 10px;
+    width: 100%;
+}
+
+input[type="submit"] {
+    background-color: #027c66;
+    color: #fff;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+    background-color: #333;
+}
+
+select {
+    margin: 0 0 1em 0;
+    padding: 10px;
+    width: 100%;
+}
+
+legend {
+    margin: 0 0 1em 0;
+    padding: 10px;
+}
+
+/* rules */
+
+@media (max-width: 800px) {
+    body {
+        background-color: #FF5733;
+    }
+}

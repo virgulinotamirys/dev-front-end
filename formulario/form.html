@@ -5,25 +5,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width initial-scale=1.0">
     <title>Unitins - Universidade Estadual do Tocantins</title>
+
+    <link rel="stylesheet" href="../css/estilo.css">
+
+    <style>
+        footer p {
+            font-size: 14px;
+        }
+    </style>
+
 </head>
 
 <body>
     <header>
         <h1>UNITINS</h1>
+
+        <nav class="nav-item">
+            <ul>
+                <li><a href="#">Institucional</a></li>
+                <li>Graduação</li>
+                <li>Pós-Graduação</li>
+                <li>Pesquisa</li>
+                <li>Extensão</li>
+                <li>Editais</li>
+                <li>Comunicação</li>
+                <li id="item-service">Serviços</li>
+            </ul>
+        </nav>
     </header>
     <hr>
     <main>
         <img src="../imagens/banner.jpeg" alt="banner" width="100%">
     </main>
     <section>
-        <h1>Parceria</h1>
+        <h1 style="color: blueviolet;">Parceria</h1>
         <figure>
             <img src="../imagens/casi.png" alt="" width="100px">
             <figcaption>Centro acadêmico de sistemas de informação</figcaption>
         </figure>
     </section>
     <section>
+        <table>
+            <caption>
+                Inscrições
+            </caption>
+            <thead>
+                <tr>
+                    <th scope="col">Período</th>
+                    <th scope="col">Editais</th>
+                    <th scope="col">Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">01/02/2024</th>
+                    <td>Pesquisa</td>
+                    <td>Fechado</td>
+                </tr>
+                <tr>
+                    <th scope="row">02/03/2024-02/06/2024</th>
+                    <td>Extensão</td>
+                    <td>Em andamento</td>
+                </tr>
+                <tr>
+                    <th scope="row">05/07/2024 - 05/12/2024</th>
+                    <td>Bolsas</td>
+                    <td>Aguardando</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section>
         <h1>Formulário de inscrição</h1>
+        <p>Preencha as informações solicitadas no formulário</p>
         <form action="cadastro.html" method="get" target="_blank">
             <div>
                 <label for="nome">Nome</label>
@@ -68,8 +122,10 @@
                     <label for="videos">Vídeos</label>
                 </div>
             </fieldset>
-            <input type="submit" value="Cadastrar">
-            <input type="reset" value="Limpar">
+            <div style="padding: 20px 0;">
+                <input type="submit" value="Cadastrar">
+                <input type="reset" value="Limpar">
+            </div>
         </form>
     </section>
     <footer>
