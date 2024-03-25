@@ -51,14 +51,15 @@
             </caption>
             <thead>
                 <tr>
-                    <th scope="col">Período</th>
-                    <th scope="col">Editais</th>
-                    <th scope="col">Status</th>
+                    <th scope="col">Col 1</th>
+                    <th scope="col">Col 2</th>
+                    <th scope="col">Col 3</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <th scope="row">01/02/2024</th>
+                    <!-- <th scope="row">01/02/2024</th> -->
+                    <td>01/02/2024</td>
                     <td>Pesquisa</td>
                     <td>Fechado</td>
                 </tr>
@@ -78,7 +79,8 @@
     <section>
         <h1>Formulário de inscrição</h1>
         <p>Preencha as informações solicitadas no formulário</p>
-        <form action="cadastro.html" method="get" target="_blank">
+        <!-- <form action="cadastro.html" method="get" target="_blank"> -->
+            <form action="cadastro.html" method="post" target="_blank">
             <div>
                 <label for="nome">Nome</label>
                 <input type="text" name="nome" />
@@ -91,11 +93,17 @@
                 <label for="email">E-mail</label>
                 <input type="email" name="email">
             </div>
-            <div>
-                <label for="sexo">Sexo</label>
-                <input type="radio" value="Masculino" name="sexo">
-                <input type="radio" value="Feminino" name="sexo">
-            </div>
+            <fieldset>
+                <legend>Escolha o sexo</legend>
+                <div>
+                    <input type="radio" id="masc" name="sexo" value="masc" checked />
+                    <label for="masc">Maculino</label>
+                </div>
+                <div>
+                    <input type="radio" id="fem" name="sexo" value="fem" checked />
+                    <label for="fem">Feminino</label>
+                </div>
+            </fieldset>
             <div>
                 <select name="select" id="">
                     <option value="pfisica">Pessoa física</option>
@@ -104,7 +112,7 @@
             </div>
             <div>
                 <label for="login">Login</label>
-                <input type="text" name="login">
+                <input type="text" name="login" required>
             </div>
             <div>
                 <label for="senha">Senha</label>
