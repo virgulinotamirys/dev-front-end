@@ -20,6 +20,44 @@ ul li {
     list-style-type: square;
 }
 
+.wrapper {
+    position: relative;
+}
+
+.box-1 {
+    position: relative;
+    z-index: 1;
+    border: dashed;
+    margin-bottom: 1em;
+    margin-top: 2em;
+}
+
+.box-1 img {
+    width: 50% !important;
+}
+
+.box-2 {
+    position: absolute;
+    z-index: 3;
+    background: #ccc;
+    width: 80%;
+    left: 60px;
+    top: 3em;
+}
+
+.box-3 {
+    position: absolute;
+    z-index: 2;
+    /* put .green-box above .dashed-box */
+    background: lightgreen;
+    width: 20%;
+    left: 65%;
+    top: -25px;
+    height: 7em;
+    opacity: 0.9;
+}
+
+
 /* nav */
 
 .nav-item {
@@ -97,9 +135,11 @@ td {
 
 
 
-
-
 /* form */
+
+.container {}
+
+.flex {}
 
 h1+p {
     color: #000;
